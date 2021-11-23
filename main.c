@@ -70,9 +70,9 @@ void matrix_menu(void)
         case 'B':
               scanf("%d%d", &i, &j);
               if(check_path(matrix,i,j)==0){
-                printf("false");}
+                printf("false\n");}
               else{
-                 printf("true");}
+                 printf("true\n");}
             break;
         case 'C':
             scanf("%d%d", &i, &j);
