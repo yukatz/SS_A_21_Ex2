@@ -1,26 +1,19 @@
 #include <stdio.h>
 #include "my_mat.h"
-#define true 1
-#define false 0
 
 int i,j;
 
 int matrix[10][10];
 
-int main(){
+int main(void){
     
-    void matrix_menu(void){
         int using = 1;
 
         while (using)
         {
-            printf("A: enter your 10*10 matrix\n");
-            printf("B: checking if there a path beetween 2 numbers\n");
-            printf("C: calcualting the shortest path beetween 2 numbers\n");
-            printf("D: Exit this program\n");
-
+           
             char choice_of_charcter;//user input choice
-            scanf("%c", &choice_of_charcter);//A/B/C/D
+            scanf(" %c", &choice_of_charcter);//A/B/C/D
             
             switch (choice_of_charcter)//cases 
             {
@@ -30,7 +23,7 @@ int main(){
 
                 case 'B':
                     scanf("%d%d", &i, &j);
-                    if(matrix[i][j]==0){
+                    if(check_path(matrix,i,j)==0){
                         printf("false\n");}
                     else{
                         printf("true\n");}
@@ -38,11 +31,11 @@ int main(){
                     
                 case 'C':
                     scanf("%d%d", &i, &j);
-                    if(matrix[i][j]==0){
-                        printf("%d", -1);
+                    if(short_path(matrix,i,j)==0){
+                        printf("%d\n", -1);
                     }
                     else{
-                        printf("%d", matrix[i][j]);
+                        printf("%d\n", short_path(matrix,i,j));
                     }
                     break;
                 case 'D':
@@ -55,9 +48,7 @@ int main(){
             }
         }
        
-    }
-     matrix_menu();
-    return 0;
     
 
-}
+    return 0;
+
