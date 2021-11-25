@@ -7,7 +7,7 @@ int matrix[10][10];
 
 int main(void){
     
-        int using = 1;
+        int using = 1;//for while loop
 
         while (using)
         {
@@ -18,12 +18,12 @@ int main(void){
             switch (choice_of_charcter)//cases 
             {
                 case 'A':
-                    for ( i = 0; i < 10; i++){
+                    for ( i = 0; i < 10; i++){//init matrix (for case of another matrix input)
                        for ( j = 0; j < 10; j++){      
                         matrix[i][j] = 0;
                        }
                      }
-                    getting_matrix(matrix);
+                    getting_matrix(matrix);//puts values from input
                     break;
 
                 case 'B':
@@ -44,7 +44,7 @@ int main(void){
                     }
                     break;
                 case 'D':
-                    using = 0;  /* This will cause the loop to end */
+                    using = 0;  //Ends while
                     break;
 
                 default:
