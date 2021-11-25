@@ -24,9 +24,9 @@ int main(void){
                 case 'B':
                     scanf("%d%d", &i, &j);
                     if(check_path(matrix,i,j)==0){
-                        printf("false\n");}
+                        printf("False\n");}
                     else{
-                        printf("true\n");}
+                        printf("True\n");}
                     break;
                     
                 case 'C':
