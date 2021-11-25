@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <my_mat.h>
+
 
   int i,j;
   int matrix[10][10];
