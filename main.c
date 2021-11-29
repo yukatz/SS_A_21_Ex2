@@ -24,6 +24,8 @@ int main(void){
                        }
                      }
                     getting_matrix(matrix);//puts values from input
+                    claculate_short_path(matrix);
+
                     break;
 
                 case 'B':
