@@ -36,7 +36,6 @@
             }
           }
         }
-        claculate_short_path(matrix);
        }
        
        
